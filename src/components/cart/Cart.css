@@ -1,0 +1,21 @@
+.cart-btn-delete{
+    color: #fff;
+    background-color: red;
+    border:none;
+    padding: 6px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.total-cart {
+    width: 100%;
+    background-color: #003b3b;
+    font-size: 2rem;
+    padding: 5px 20px;
+    color: #52ff00;
+    }
+
+    .cart-info{
+        color: var(--secondary-color);
+    }

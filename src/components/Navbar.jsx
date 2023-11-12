@@ -9,8 +9,6 @@ function Navbar() {
 <nav>
         <ul className='navbar'>
           <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/cart">cart</NavLink></li>
-          <li><NavLink to="/carts">carts</NavLink></li>
           <li>  
             <Link to="/cart"><i className="bi bi-cart">  {quantity > 0 ? <span className='cart-number'>{quantity}</span> : ""}
           </i></Link>

@@ -3,7 +3,7 @@ import "./Product.css"
 import data from "../../data/data"
 import {useParams} from "react-router-dom"
 import { useState } from 'react';
-import { useSelector,useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 function Product() {
   const dispatch = useDispatch();
 
@@ -12,13 +12,9 @@ const addProduct = (book)=>{
   dispatch(action)
 }
 
-
-
-
-
     const { id } = useParams();
     const book=data.find(b => b.id === +id)
-const [quan,setQuan]=useState(1)
+    const [quan,setQuan]=useState(1)
     const handelForm = (e)=>{
       e.preventDefault()
     }

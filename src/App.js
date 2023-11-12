@@ -2,28 +2,29 @@ import React from 'react'
 import "./App.css"
 import Home from './components/Home/Home'
 import Product from "./components/product/Product"
-import Carts from './components/carts'
 import Cart from './components/cart/Cart'
 import Navbar from './components/Navbar'
 import {BrowserRouter,Routes,Route} from "react-router-dom"
-import SwithMood from "./components/SwithMood/SwithMood"
+import SwitchMood from "./components/SwitchMood/SwitchMood.jsx"
+
 
 function App() {
   
   return (
     <BrowserRouter>
+    
     <div  className="App">
       <Navbar/>
-        <SwithMood/>
+        <SwitchMood/>
       <Routes>
         <Route path="/" element={<Home/>} exact/>
         <Route path="/cart" element={<Cart/>}/>
-        <Route path="/carts" element={<Carts/>}/>
         <Route path="/:id" element={<Product/>}/>
       </Routes>
     
      
     </div>
+
     </BrowserRouter>
   )
 }

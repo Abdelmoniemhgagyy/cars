@@ -1,9 +1,9 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import "./SwithMood.css"
+import "./SwitchMood.css"
 
 
-function SwithMood() {
+function SwitchMood() {
     const [theme,setTheme]=useState(localStorage.getItem("currentMood")??"light")
     useEffect(()=>{
         if(theme === "dark"){
@@ -29,4 +29,4 @@ function SwithMood() {
   )
 }
 
-export default SwithMood
+export default SwitchMood
